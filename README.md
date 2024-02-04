@@ -67,3 +67,53 @@ const noSpace = (x) => x.split(' ').join('');
 ```bash
 const countSheeps = (sheep) => sheep.filter(Boolean).length;
 ```
+
+### Challenge 11: Reverse Seq
+
+```bash
+const reverseSeq = (n) => [...Array(n)].map((_, i) => n - i);
+```
+
+### Challenge 12: Hero vs Dragons
+
+```bash
+const hero = (bullets, dragons) => (bullets / 2 >= dragons ? true : false);
+```
+
+### Challenge 13: Array to String
+
+```bash
+const smash = (words) => words.join(" ");
+```
+
+### Challenge 14: Fuel
+
+```bash
+const zeroFuel = (jarak, mpg, bensin) => bensin >= jarak / mpg;
+```
+
+### Challenge 15: DNA to RNA
+
+```bash
+const DNAtoRNA = (dna) => dna.replace(/T/g, "U");
+```
+
+### Challenge 16: Array Count by x
+
+```bash
+const countBy = (x, n) => [...Array(n)].map((_, i) => x * (i + 1));
+```
+
+### Challenge 17: Remove Duplicate Word
+
+```bash
+function removeDuplicateWords(str) {
+  const words = str.split(" ");
+
+  const uniqueWords = words.filter(
+    (word, index) => words.indexOf(word) === index
+  );
+
+  return uniqueWords.join(" ");
+}
+```
